@@ -1,0 +1,194 @@
+@import
+  '_custom_bootstrap_vatiables.scss',
+  '../../bower_components/bootstrap/scss/_functions.scss',
+  '../../bower_components/bootstrap/scss/_variables.scss',
+  '../../bower_components/bootstrap/scss/_mixins.scss';
+
+
+// :root {
+//   font-size: 62.5%;
+// }
+
+
+/* nunito-regular - latin */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../webfonts/nunito-v9-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Nunito Regular'), local('Nunito-Regular'),
+       url('../webfonts/nunito-v9-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../webfonts/nunito-v9-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../webfonts/nunito-v9-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../webfonts/nunito-v9-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../webfonts/nunito-v9-latin-regular.svg#Nunito') format('svg'); /* Legacy iOS */
+}
+
+/* nunito-700 - latin */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../webfonts/nunito-v9-latin-700.eot'); /* IE9 Compat Modes */
+  src: local('Nunito Bold'), local('Nunito-Bold'),
+       url('../webfonts/nunito-v9-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../webfonts/nunito-v9-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../webfonts/nunito-v9-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('../webfonts/nunito-v9-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../webfonts/nunito-v9-latin-700.svg#Nunito') format('svg'); /* Legacy iOS */
+}
+
+@each $color, $value in $theme-colors {
+  .btn-outline-#{$color} {
+    @include button-outline-variant($value);
+    @include hover {
+      color: $value !important;
+      background: transparent !important;
+    }
+    &:active{
+      color: $value !important;
+      background: transparent !important;
+    }
+  }
+}
+
+@each $color, $value in $theme-colors {
+  .btn-#{$color} {
+    @include button-variant($value, $value);
+    @include hover {
+      color: #fff !important;
+      background: $value !important;
+      border-color: $value !important;
+    }
+    &:active{
+      color: #fff !important;
+      background: $value !important;
+      border-color: $value !important;
+    }
+  }
+}
+a{
+  &:hover{
+    text-decoration: none;
+  }
+}
+
+body{
+  // font-family: 'Nunito';
+  font-family: Helvetica, Arial, sans-serif;
+}
+// The Mixin 
+@mixin placeholder_custom{
+  &:-ms-input-placeholder {
+    @content
+  }
+  &::-moz-placeholder {
+    @content
+  }
+  &::-webkit-input-placeholder {
+    @content
+  }
+}
+
+.col_fix_prev{
+  flex: 0 0 286px;
+  max-width: 286px;
+  @include media-breakpoint-down(sm) {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+h1{
+  // font:700 24px/26px 'Nunito';
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 700;
+}
+h3{
+  // font:700 18px/18px 'Nunito';
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+}
+.font_helvetica{
+  font-family: Helvetica, Arial, sans-serif !important;
+}
+.btn{
+  box-shadow: none !important;
+}
+p{
+  font-size: 14px;
+  line-height: 18px;
+}
+.minw{
+  min-width: 200px;
+}
+.font_arial{
+  font-family: Arial,sans-serif !important;
+}
+.pos_relative{
+  position: relative;
+}
+.icn{
+  display: inline-block;
+  vertical-align: middle;
+}
+.col_md_170{
+  @include media-breakpoint-up(md) { 
+    flex: 0 0 170px;
+    max-width: 170px;
+  }
+}
+.bg_white_tablet{
+  @include media-breakpoint-down(sm) {
+    background: #fff;
+  }
+}
+.col_md_200{
+  @include media-breakpoint-up(md) { 
+    flex: 0 0 200px;
+    max-width: 200px;
+  }
+}
+em.data{
+  font-style: normal;
+  font-size: 14px;
+  display: block;
+  span{
+    @media screen and (max-width: 400px) {
+      display: block;
+    }
+  }
+}
+.minw_0{
+  min-width: 0 !important;
+}
+.radius_50p{
+  border-radius: 50%;
+}
+.btn_sm_block{
+  flex: 0 0 auto;
+  width: auto;
+  max-width: none;
+  display: inline-block;
+  @include media-breakpoint-down(sm) {
+    display: block !important;
+  }
+}
+.btn-white{
+  font-size: 16px;
+  background: #fff;
+  color:theme-color("primary");
+  &:hover{
+    color:theme-color("primary");
+  }
+}
+.max_w_240{
+  max-width: 240px;
+  margin-left: auto;
+  margin-right: auto;
+}
+table{
+  font-size: 14px;
+  line-height: 16px;
+}
