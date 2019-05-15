@@ -11,7 +11,8 @@
   "dependencies": {
     "jquery": "^3.2.1",
     "bootstrap": "^4.2.1",
-    "fontawesome": "5.0.8"
+    "fontawesome": "^5.0.8",
+    "fancybox": "^3.5.7"
   },
   "devDependencies": {}
 }
