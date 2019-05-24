@@ -12,7 +12,9 @@
     "jquery": "^3.2.1",
     "bootstrap": "^4.2.1",
     "fontawesome": "^5.0.8",
-    "fancybox": "^3.5.7"
+    "fancybox": "^3.5.7",
+    "jquery-ui": "^1.12.1",
+    "jcf": "^1.2.3"
   },
   "devDependencies": {}
 }

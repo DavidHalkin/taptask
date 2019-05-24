@@ -15,7 +15,42 @@ $(document).ready(function(){
         $(".menu_mob_shadow_js").toggleClass("active");
         $("body").toggleClass("body_overflow");
     });
+
+     $(".switcher_drop_js").click(function(){
+        $(this).toggleClass("active");
+        $(this).parent().find(".sub_cat").slideToggle("fast");
+    });
+
+      $(".additional_terms_link__js").click(function(){
+        $(this).toggleClass("active");
+        $(this).parent().find("ul").slideToggle("fast");
+        return false;
+    });
+      // toggle chat
+      $(".chat_toogle_js").click(function(){
+        $(this).toggleClass("active");
+        $(".chat_main_holder").toggleClass("active");
+    });
+      // switch_panel_chat
+       $(".switch_panel_chat_js").click(function(){
+        $(".chat_main_holder").toggleClass("active");
+    });
 });
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
+// header
+$(function(){
+    $(window).scroll(function() {
+        if ($(this).scrollTop() >= 80) {
+            $('.header').addClass('dark');
+        }
+        else {
+            $('.header').removeClass('dark');
+        }
+    });
+})
+// select
+$(function() {
+  jcf.replaceAll();
+});

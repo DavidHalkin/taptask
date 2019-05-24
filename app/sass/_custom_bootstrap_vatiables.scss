@@ -1,10 +1,11 @@
 $theme-colors: (
    "light": #fbfbfb,
    "primary": #7dc0e7,
-   "success": #92c37c,
+   "success": #65bf3d,
    "danger": #e61610,
-   "warning": #ffb74d,
+   "warning": #edb20f,
    "indigo": #8582bc,
+   "custom_yellow": #ffef00,
 );
 
 $input-focus-box-shadow: none;
@@ -14,7 +15,7 @@ $btn-focus-box-shadow: none !important;
 
 $body-color: #000;
 $btn-border-radius: 5px;
-$input-border-radius: 0;
+$input-border-radius: 5px;
 
 $link-color:#449ad9;
 $link-hover-color: $link-color;
