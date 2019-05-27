@@ -909,4 +909,22 @@ select { width: 100%; }
 
 .slider_info i em { font-style: normal; font-weight: normal; }
 
+.modal .form-control.error { border-color: #e61610 !important; }
+
+.modal .btn i { font-size: 20px; }
+
+.modal .btn i, .modal .btn span { display: inline-block; vertical-align: middle; }
+
+.modal label { font-weight: normal !important; }
+
+.modal label.error { color: #e61610; padding-top: 5px; display: block; font-size: 11px; }
+
+.separator { overflow: hidden; }
+
+.separator strong { position: relative; color: #000; }
+
+.separator strong:after, .separator strong:before { content: ''; width: 100px; height: 1px; background: #ccc; position: absolute; top: 50%; left: 100%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); }
+
+.separator strong:before { left: auto; right: 100%; }
+
 /*# sourceMappingURL=all.css.map */

@@ -1632,3 +1632,50 @@ select{
 		}
 	}
 }
+// new 27/05/2019
+.modal{
+	.form-control{
+		&.error{
+			border-color: #e61610 !important;
+		}
+	}
+	.btn{
+		i{
+			font-size: 20px;
+		}
+		i,span{
+			display: inline-block;
+			vertical-align: middle;
+		}
+	}
+	label{
+		font-weight: normal !important;
+		&.error{
+			color: #e61610;
+			padding-top: 5px;
+			display: block;
+			font-size: 11px;
+		}
+	}
+}
+.separator{
+	overflow: hidden;
+	strong{
+		position: relative;
+		color: #000;
+		&:after,&:before{
+			content: '';
+			width: 100px;
+			height: 1px;
+			background: #ccc;
+			position: absolute;
+			top: 50%;
+			left: 100%;
+			transform:translateY(-50%);
+		}
+		&:before{
+			left: auto;
+			right: 100%;
+		}
+	}
+}
