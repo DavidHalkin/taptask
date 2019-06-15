@@ -35,6 +35,13 @@ $(document).ready(function(){
        $(".switch_panel_chat_js").click(function(){
         $(".chat_main_holder").toggleClass("active");
     });
+
+
+        $(".collapseble_bar_title_js").click(function(){
+            $(this).parent().toggleClass("active");
+            $(this).parent().find(".collapseble_bar_drop").slideToggle("fast");
+            return false;
+        });
 });
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
