@@ -66,7 +66,7 @@
 									</div>
 								</div>
 							</div>
-							<strong class="logo"><a href="#"><img src="images/logo.png" alt="" class="img-fluid"></a></strong>
+							<strong class="logo"><a href="#"  data-fancybox="n_modal" data-modal="true" data-src="#n_modal"><img src="images/logo.png" alt="" class="img-fluid"></a></strong>
 							<div class="main_nav">
 								<ul class="list-unstyled m-0 d-flex">
 									<li class="dropdown">
@@ -749,6 +749,63 @@
 						</div>
 					</div>
 					<span class="copy d-block pt-3">© 2019 TapTask (taptask.eu) · <a href="#" class="link_underline d-inline-block">Правила сервиса</a></span>
+				</div>
+			</div>
+		</div>
+		<div id="n_modal" class="n_modal" style="display: none;">
+			<div class="bg_n px-3 pt-4 px-xl-4 pb-4">
+				<a href="#" class="far fa-times-circle ml-auto text-danger close_modal" data-fancybox-close=""></a>
+				<h2 class="pb-3">Добавить предложение к заданию</h2>
+				<div class="row mb-2">
+					<div class="col-12 col-md-6">
+						<select class="present" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
+							<option value="v5">30 км</option>
+							<option value="v6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit temporibus labore, quaerat aut. Doloribus repellendus sit placeat officiis delectus quae neque, libero, reprehenderit hic nihil ab, quibusdam aut labore laudantium.</option>
+						</select>
+					</div>
+				</div>
+				<div class="form-group">
+					<textarea class="form-control" rows="3"></textarea>
+				</div>
+				<div class="checkbox_custom">
+					<input id="v1" type="checkbox" disabled="" checked="">
+					<label for="v1">Оплата на банковскую карту через <a href="#">Сделку без риска</a> </label>
+				</div>
+				<div class="pl-4 mt-3 pb-3 border-bottom border-gray">
+					<div class="alert_inf p-3">
+						<p>Данные карты лдя получения оплаты можно ввести на следующем шаге</p>
+					</div>
+				</div>
+				<div class="checkbox_custom my-3">
+					<input id="v11" type="checkbox">
+					<label for="v11">Уведомить меня, если исполнителем задания выберут другого</label>
+				</div>
+				<div class="checkbox_custom">
+					<input id="v111" type="checkbox">
+					<label for="v111">Указать время актуальности предложения <i class="far fa-question-circle question_tooltip" data-toggle="tooltip" data-placement="right" title="" data-original-title="Tooltip on right"></i></label>
+				</div>
+				<div class="min_select ml-4 mt-3">
+					<select class="present" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
+						<option value="v5">30 часов</option>
+						<option value="v53">310 часов</option>
+						<option value="v6">Lorem ipsum dolor sit amet, </option>
+					</select>
+				</div>
+			</div>
+			<div class="p-3 p-xl-4">
+				<h2>Стоимость вашей работы</h2>
+				<p class="text_gray m-0 py-2">Заказчик указал мелкий бюджет - до 500 EUR</p>
+				<div class="d-flex align-items-center pr-4  my-2 ">
+					<input class="form-control text-center min_inp" placeholder="" value="50" type="text">
+					<span class="pl-2">EUR</span>
+				</div>
+				<button class="btn btn-lg btn-success mt-4 btn-block">Далее</button>
+				<div class="task_footer text-center mt-3">
+					<p>Нажимая «Опубликовать», вы&nbsp;соглашаетесь с&nbsp;правилами платёжного сервиса
+					«<a href="#" target="_blank">Единая касса&nbsp;— Безопасная Сделка</a>»
+					и&nbsp;сервиса «<a href="#" target="_blank">Сделка без риска</a>».
+					Ваш банк может взимать дополнительную комиссию.
+					<a href="#">Отключить Сделку без риска</a></p>
 				</div>
 			</div>
 		</div>

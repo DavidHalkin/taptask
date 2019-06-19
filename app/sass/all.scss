@@ -1813,20 +1813,31 @@ select{
 	}
 
 }
+.jcf-select-drop{
+	z-index: 10 !important;
+}
+.text_gray{
+	color: #a8a8a8;
+}
+.min_select{
+	max-width: 120px;
+	flex: 0 0 120px;
+	@include media-breakpoint-down(xs)  {
+		max-width: 100%;
+		flex:0 0 100%;
+	}
+}
+.min_inp{
+	max-width: 120px;
+	flex:0 0 120px;
+}
 .history_block{
 	background: #f8f7ee;
 	.history_title{
 		h2{
 			font-weight: bold;
 		}
-		.min_select{
-			max-width: 120px;
-			flex: 0 0 120px;
-			@include media-breakpoint-down(xs)  {
-				max-width: 100%;
-				flex:0 0 100%;
-			}
-		}
+		
 	}
 }
 .nav-pills_cstm{
@@ -1982,4 +1993,41 @@ select{
 }
 .fz_15{
 	font-size: 15px;
+}
+.n_modal{
+	max-width: 600px;
+	width: 100%;
+	padding: 0;
+}
+.bg_n{
+	background: #fcf8f0;
+}
+.close_modal{
+	font-size: 20px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	&:hover{
+		text-decoration: none;
+	}
+}
+.alert_inf{
+	background: #fde2c0;
+	border-radius: 8px;
+	border-top-left-radius: 0;
+	position: relative;
+	&:before{
+		content: '';
+		width: 0;
+		height: 0;
+		position: absolute;
+		top: 0;
+		left: -10px;
+		border-top: 10px solid #fde2c0;
+		border-left: 10px solid transparent;
+	}
+	p{
+		margin: 0;
+		color: #5a5958;
+	}
 }
